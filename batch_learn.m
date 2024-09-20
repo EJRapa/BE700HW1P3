@@ -17,7 +17,7 @@ w_err = sum(abs(err));
 
 dw = ALPHA * err .* x_i;
 
-dw_avg = mean(dw,1);
+dw_avg = sum(dw,1);
 
 weights = weights + dw_avg.';
 
